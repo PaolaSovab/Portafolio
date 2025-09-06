@@ -23,6 +23,7 @@ html{
    top: 0;
    left: 0;
    z-index: 99;
+   height: 8vh;
 }
 
 .contenedor-header header{
@@ -79,19 +80,22 @@ html{
 .inicio{
     background: linear-gradient(to top, rgba(85, 81, 93, 0.878), rgba(85, 81, 93, 0.807)), url(img/D.jpg);
     background-size: cover;
-    height: 650px;
+    height: 70vh;
     color: #f1f1f1;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding-top: 8vh;
 }
 
 .contenido-banner{
     display: flex;
     flex-direction: row; 
-    align-items: flex-start;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
     max-width: 900px;
-    margin: 100px auto 0;
     padding: 30px 20px;
     background-color: #393D4A;
     border-radius: 40px;
@@ -126,7 +130,7 @@ html{
     color: #f1f1f1;
     text-decoration: none;
     border: 1px solid #e9babc;
-    border-radius: 50%;
+    border-radius: 50%; 
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -271,7 +275,7 @@ html{
     border: 2px solid #f1f1f1;
     width: fit-content;
     display: block;
-    margin: 30px auto 25px auto;
+    margin: 30px auto 10vh auto;
     padding: 10px 22px;
     font-size: 16px;
     color: #f1f1f1;
@@ -320,7 +324,7 @@ html{
     font-size: 48px;
     font-family: 'roboto slab';
     text-align: center;
-    padding: 20px 0;
+    padding: 10vh 0 0 0;
 }
 
 .curriculum .contenido-seccion p{
@@ -348,6 +352,11 @@ html{
     font-size: 28px;
     font-family: 'roboto slab';
     margin-bottom: 25px;
+}
+
+.sobremi .fila .col:nth-child(2) h3 {
+    display: flex;
+    justify-content: flex-end; 
 }
 
 .curriculum .fila .izquierda{
@@ -473,7 +482,7 @@ html{
 .portafolio{
    background-color: #393D4A;
    color: #f1f1f1;
-   padding-bottom: 30px;
+   padding-bottom: 10vh;
 }
 
 .portafolio .contenido-seccion{
@@ -485,7 +494,7 @@ html{
     font-size: 48px;
     font-family: 'roboto slab';
     text-align: center;
-    padding: 20px 0;
+    padding: 10vh 0 30px 0;
 }
 
 .portafolio .galeria{
@@ -554,14 +563,13 @@ html{
 /*Contacto*/
 
 .contact-section {
-    position: relative;
+  position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  padding: 60px 10%;
+  padding: 10vh;
   width: 100%;
   margin: auto;
-
   color: #f1f1f1;
 }
 
@@ -573,8 +581,6 @@ html{
 .contact-text h2 {
   font-size: 3.2rem;
   font-weight: bold;
-  margin-bottom: 30px;
-  margin-top: 50px;
   text-align: center;
 }
 
@@ -583,6 +589,7 @@ html{
   align-items: center;
   justify-content: center;
   gap: 30px;
+  margin-top: 4vh;
 }
 
 .contact-buttons .btn {
@@ -591,7 +598,6 @@ html{
   justify-content: center;
   width: 160px;
   height: 60px;
-  margin-top: 20px;
   font-size: 2rem;
   border-radius: 12px;
   background-color: #444552;
@@ -642,3 +648,286 @@ html{
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  /* Media Queries */
+
+  @media screen and (max-width: 980px){
+    nav{ display: none; }
+
+    .nav-responsive{ display: block; }
+
+    nav.responsive{ display: block; 
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    background-color: #393D4A;
+    width: 180px;}
+
+    nav.responsive ul{ display: block !important; }
+
+    nav.responsive ul li{ border-bottom: 1px solid #f1f1f1;
+    padding: 10px 0;
+     }
+
+      .contenedor-header header .logo a .logo-img{
+        width: 60px; 
+    }
+    
+    .inicio{
+        padding: 8vh 10px 0 10px;
+    }
+
+    .contenido-banner{
+    gap: 10px;
+    padding: 10px 5px;
+    }
+
+    .contenedor-img img{
+        width: 100px;
+    }
+
+    .lado-izquierdo h1{
+        font-size: 14px;
+    }
+
+    .lado-izquierdo h2{
+        font-size: 12px;
+    }
+
+    .redes{
+        margin: 5px;
+    }
+
+    .redes a{
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .lado-derecho h2{
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .lado-derecho p{
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .curriculum h2{
+        font-size: 28px;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+
+    .curriculum .fila .col{
+        width: 90%;
+    }
+
+     .curriculum .fila .col h3 {
+        font-size: 20px;
+     }
+
+     .sobremi .fila .col ul li {
+        font-size: 14px;
+     }
+
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .curriculum .fila .item h4{
+        font-size: 16px;
+    }
+
+     .curriculum .fila .item .casa{
+        font-size: 20px;
+    }
+
+    .curriculum .fila .item .fecha{
+        font-size: 12px;
+    }
+     .curriculum .fila .item p{
+        font-size: 14px;
+    }
+
+    .curriculum button{
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .portafolio h2{
+        font-size: 28px;
+    }
+    
+    .contact-section h2{
+        font-size: 1.8rem;
+    }
+
+    .contact-buttons .btn{
+        height: 40px;
+        width: 140px;
+        font-size: 1.4rem;
+    }
+
+    .info{
+        font-size: 0.8rem;
+    }
+     
+    footer{
+        padding: 2.5vh;
+    }
+  }
+
+  @media screen and (max-width: 700px){
+    .contenedor-header header .logo a .logo-img{
+        width: 60px; 
+    }
+    
+    .inicio{
+        padding: 8vh 10px 0 10px;
+    }
+
+    .contenido-banner{
+    gap: 10px;
+    padding: 10px 5px;
+    }
+
+    .contenedor-img img{
+        width: 100px;
+    }
+
+    .lado-izquierdo h1{
+        font-size: 14px;
+    }
+
+    .lado-izquierdo h2{
+        font-size: 12px;
+    }
+
+    .redes{
+        margin: 5px;
+    }
+
+    .redes a{
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .lado-derecho h2{
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .lado-derecho p{
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .contenido-seccion h2{
+        font-size: 22px;
+    }
+
+    .curriculum .fila .col h3 {
+        font-size: 18px;
+    }
+
+    .sobremi .fila .col ul li {
+        font-size: 14px;
+    }
+
+    .sobremi .fila .contenedor-habilidades{
+        justify-content: center;
+    }
+
+    /*
+    .sobremi .fila .col:last-child h3{
+        display: block;
+        text-align: center;
+    } */
+
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+
+    .curriculum button{
+        width: 140px;
+        font-size: 12px;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+
+    .curriculum .fila .col{
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .curriculum .fila .item h4{
+        font-size: 16px;
+    }
+
+     .curriculum .fila .item .casa{
+        font-size: 20px;
+    }
+
+    .curriculum .fila .item .fecha{
+        font-size: 12px;
+    }
+     .curriculum .fila .item p{
+        font-size: 14px;
+    }
+
+    .portafolio .galeria{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .portafolio .galeria .proyecto{
+       max-width: 100%;
+    }
+
+    .portafolio .galeria .proyecto img{
+        width: 100%;
+    }
+
+
+    .contact-section h2{
+        font-size: 1.2rem;
+    }
+
+
+    .contact-buttons .btn{
+        height: 40px;
+        width: 100px;
+        font-size: 1.2rem;
+    }
+
+    .info{
+        font-size: 0.8rem;
+    }
+
+    footer{
+        padding: 2.5vh;
+    }
+
+  }
+    
