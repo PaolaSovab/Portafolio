@@ -782,7 +782,7 @@ html{
     }
   }
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 600px){
     .contenedor-header header .logo a .logo-img{
         width: 60px; 
     }
@@ -931,3 +931,4 @@ html{
 
   }
     
+
