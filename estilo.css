@@ -762,7 +762,7 @@ html{
     .portafolio h2{
         font-size: 28px;
     }
-    
+
     .contact-section h2{
         font-size: 1.8rem;
     }
@@ -782,20 +782,30 @@ html{
     }
   }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 700px){
     .contenedor-header header .logo a .logo-img{
         width: 60px; 
     }
     
-    .inicio{
-        padding: 8vh 10px 0 10px;
+    .inicio {
+        min-height: 80vh;
+        padding: 6vh 10px 0 10px;
     }
 
-    .contenido-banner{
-    gap: 10px;
-    padding: 10px 5px;
+.contenido-banner {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    max-width: 900px; 
+    margin: auto; 
     }
 
+    .lado-izquierdo, .lado-derecho {
+        width: 100%;
+        justify-content: center;
+    }
+    
     .contenedor-img img{
         width: 100px;
     }
@@ -808,10 +818,6 @@ html{
         font-size: 12px;
     }
 
-    .redes{
-        margin: 5px;
-    }
-
     .redes a{
         height: 30px;
         width: 30px;
@@ -819,14 +825,23 @@ html{
         font-size: 14px;
     }
 
-    .lado-derecho h2{
-        font-size: 14px;
-        margin: 10px;
+    .lado-derecho {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
     }
 
-    .lado-derecho p{
-        font-size: 12px;
-        line-height: normal;
+    .lado-derecho h2 {
+        font-size: 14px;
+        text-align: center; 
+        margin: 10px 0;
+    }
+
+    .lado-derecho p {
+        margin: 0; 
+        padding: 10px; 
+        text-align: center; 
     }
 
     .contenido-seccion h2{
@@ -845,11 +860,12 @@ html{
         justify-content: center;
     }
 
-    /*
+    
     .sobremi .fila .col:last-child h3{
         display: block;
         text-align: center;
-    } */
+        margin-top: 20px;
+    } 
 
     .sobremi .fila{
         display: block;
@@ -909,11 +925,9 @@ html{
         width: 100%;
     }
 
-
     .contact-section h2{
         font-size: 1.2rem;
     }
-
 
     .contact-buttons .btn{
         height: 40px;
@@ -930,5 +944,3 @@ html{
     }
 
   }
-    
-
