@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portafolio</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsive.css">
+
 </head>
 <body>
 
@@ -14,16 +16,16 @@
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#"><img src="img/WhatsApp Image 2025-09-01 at 1.37.30 AM.jpeg" alt="Logo" class="logo-img"></a></div>
+                <a href="#"><img src="img/Logo-PS.svg" alt="Logo" class="logo-img"></a></div>
                 <nav id="nav">
                     <ul>
-                        <li> <a href="#inicio">INICIO</a></li>
-                        <li> <a href="#curriculum">CURRICULUM</a></li>
-                        <li> <a href="#portafolio">PORTAFOLIO</a></li>
-                        <li> <a href="#contacto">CONTACTO</a></li>
+                        <li> <a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li> <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li> <a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                        <li> <a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                     </ul>
                 </nav>
-                <div class="nav-responsive">
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
         </header>
@@ -40,7 +42,7 @@
             <h2>Ingeniera Informática - Especializada en front-end</h2>
             <div class="redes">
                 <a href="https://wa.me/584246695529" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="mailto:paolasovab@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                <a class="correo-link btn email" target="_blank"><i class="fa-regular fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/paola-sovab-6a2a98378" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/PaolaSovab" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
@@ -295,7 +297,7 @@
       <a href="https://wa.me/584246695529" target="_blank" class="btn whatsapp">
         <i class="fab fa-whatsapp"></i>
       </a>
-      <a href="mailto:paolasovab@gmail.com" target="_blank" class="btn email">
+      <a class="correo-link btn email" target="_blank">
         <i class="fas fa-envelope"></i>
       </a>
     </div>
@@ -317,6 +319,7 @@
   </div>
 </footer>
 
+<script src="script.js"></script>
 
 </body>
 </html>

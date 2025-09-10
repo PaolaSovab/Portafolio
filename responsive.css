@@ -1,0 +1,354 @@
+
+@media screen and (max-width: 980px){
+
+nav{ 
+display: none; 
+}
+
+.nav-responsive{ 
+display: block; 
+}
+
+nav.responsive{ 
+display: block; 
+position: absolute;
+top: 8vh;
+right: 0;
+background-color: #393D4A;
+width: 180px;
+}
+
+nav.responsive ul{ 
+display: block !important; 
+}
+
+nav.responsive ul li{ 
+border-bottom: 1px solid #f1f1f1;
+padding: 10px 0; 
+}
+
+.contenedor-header header .logo a .logo-img{
+width: 12%; 
+}
+
+.inicio{
+height: 50vh;
+padding: 8vh 10px 0 10px;
+}
+
+.contenido-banner{
+gap: 10px;
+padding: 10px 5px;
+}
+
+.contenedor-img img{
+width: 100px;
+}
+
+.lado-izquierdo h1{
+font-size: 14px;
+}
+
+.lado-izquierdo h2{
+font-size: 12px;
+}
+
+.redes{
+margin: 5px;
+}
+
+.redes a{
+height: 30px;
+width: 30px;
+line-height: 30px;
+font-size: 14px;
+}
+
+.lado-derecho h2{
+font-size: 14px;
+margin: 10px;
+}
+
+.lado-derecho p{
+font-size: 12px;
+line-height: normal;
+}
+
+.curriculum h2{
+font-size: 28px;
+padding: 5vh 0 0 0;
+}
+
+.curriculum .fila{
+display: block;
+margin: 0 1vh 0 1vh;
+}
+
+.curriculum .fila .col{
+width: 100%;
+}
+
+.curriculum .fila .col h3 {
+font-size: 20px;
+}
+
+.sobremi .fila .col ul li {
+font-size: 14px;
+}
+
+
+.curriculum .fila .item h4{
+font-size: 16px;
+}
+
+.curriculum .fila .item .casa{
+font-size: 20px;
+}
+
+.curriculum .fila .item .fecha{
+font-size: 12px;
+}
+.curriculum .fila .item p{
+font-size: 16px;
+}
+
+.curriculum button{
+width: 160px;
+font-size: 14px;
+margin: 2vh auto 5vh auto;
+}
+
+.portafolio{
+padding-bottom: 5vh;
+}
+
+.portafolio h2{
+font-size: 28px;
+padding: 5vh 0 2vh 0;
+}
+
+.portafolio .galeria .proyecto{
+max-width: 90%;
+width: 100%;
+height: auto;
+}
+
+.portafolio .galeria .proyecto img{
+width: 100%;
+}
+
+.contact-section{
+padding: 5vh;
+}
+.contact-text{
+flex: 1;
+}
+
+.contact-section h2{
+font-size: 1.8rem;
+}
+
+.contact-buttons .btn{
+height: 40px;
+width: 140px;
+font-size: 1.4rem;
+}
+
+.contact-image{
+flex: 1;
+}
+
+
+.info{
+font-size: 0.8rem;
+}
+
+footer{
+padding: 2.5vh;
+}
+}
+
+@media screen and (max-width: 700px){
+
+.contenedor-header header .logo a .logo-img{
+width: 10%; 
+}
+
+.inicio {
+min-height: 80vh;
+padding: 8vh 10px 0 10px;
+}
+
+.contenido-banner {
+display: flex;
+flex-direction: column; 
+align-items: center; 
+justify-content: center; 
+max-width: 900px; 
+margin: auto; 
+}
+
+.lado-izquierdo, .lado-derecho {
+width: 100%;
+justify-content: center;
+}
+
+.contenedor-img img{
+width: 15%;
+}
+
+.lado-izquierdo h1{
+font-size: 14px;
+}
+
+.lado-izquierdo h2{
+font-size: 12px;
+}
+
+.redes a{
+height: 30px;
+width: 30px;
+line-height: 30px;
+font-size: 14px;
+}
+
+.lado-derecho {
+flex: 1; 
+display: flex;
+flex-direction: column; 
+align-items: center; 
+}
+
+.lado-derecho h2 {
+font-size: 14px;
+text-align: center; 
+margin: 10px 0;
+}
+
+.lado-derecho p {
+margin: 0; 
+padding: 10px; 
+text-align: center; 
+}
+
+.contenido-seccion h2{
+font-size: 22px;
+padding: 5vh 0 0 0;
+margin-bottom: 2vh;
+}
+
+.curriculum .fila .col h3 {
+font-size: 18px;
+}
+
+.sobremi .fila .col ul li {
+font-size: 14px;
+}
+
+.sobremi .fila .contenedor-habilidades{
+justify-content: space-around;
+}
+
+.sobremi .fila .col:last-child h3{
+display: block;
+margin-top: 10%;
+} 
+
+.sobremi .fila{
+display: block;
+}
+
+.sobremi .fila .col{
+width: fit-content;
+}
+
+.skills .fila{
+display: block;
+}
+
+.skills .fila .col{
+width: 100%;
+}
+
+.curriculum button{
+width: 140px;
+font-size: 12px;
+margin: 3vh auto 5vh auto;
+}
+
+.curriculum .fila{
+display: block;
+}
+
+.curriculum .fila .col{
+width: 90%;
+}
+
+.sobremi .fila .contenedor-habilidades .habilidades{
+width: 20%;
+}
+
+.curriculum .fila .derecha{
+margin-left: 2.2vh;
+}
+
+.curriculum .fila .item h4{
+font-size: 16px;
+}
+
+.curriculum .fila .item .casa{
+font-size: 20px;
+}
+
+.curriculum .fila .item .fecha{
+font-size: 12px;
+}
+
+.curriculum .fila .item p{
+font-size: 14px;
+}
+
+.portafolio{
+padding-bottom: 5vh;
+}
+
+.portafolio .galeria{
+justify-content: center;
+width: 100%;
+}
+
+.portafolio .galeria .proyecto{
+max-width: 90%;
+}
+
+.portafolio .galeria .proyecto img{
+width: 100%;
+}
+
+.contact-section{
+padding: 5vh;
+}
+
+.contact-section h2{
+font-size: 1.2rem;
+}
+
+.contact-buttons .btn{
+height: 40px;
+width: 100px;
+font-size: 1.2rem;
+} 
+
+.contact-image{
+display: none;
+}
+
+.info{
+font-size: 0.8rem;
+}
+
+footer{
+padding: 2.5vh;
+}
+
+}  
