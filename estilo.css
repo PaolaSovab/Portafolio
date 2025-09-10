@@ -601,8 +601,8 @@ margin-top: 4vh;
 display: flex;
 align-items: center;
 justify-content: center;
-width: 160px;
-height: 60px;
+width: 130px;
+height: 50px;
 font-size: 1.8rem;
 border-radius: 12px;
 background-color: #444552;
@@ -626,7 +626,7 @@ max-width: 40%;
 }
 
 .contact-image img {
-max-width: 100%;
+max-width: 90%;
 height: auto;
 display: block;
 }
