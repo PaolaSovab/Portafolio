@@ -566,15 +566,17 @@ position: relative;
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 10vh;
+padding: 10vh 5%;
 width: 100%;
 margin: auto;
 color: #f1f1f1;
+overflow: hidden;
 }
 
 .contact-text {
 flex: 1.6;
 text-align: center;
+max-width: 60%;
 }
 
 .contact-text h2 {
@@ -608,7 +610,7 @@ transition: transform 0.2s ease, background 0.2s ease;
 
 .contact-buttons .btn:hover {
 transform: scale(1.1);
-background-color: #e9babc;
+background-color: #e9babc; 
 color: #393D4A;
 }
 
@@ -616,10 +618,13 @@ color: #393D4A;
 flex: 1;
 display: flex;
 justify-content: center;
+max-width: 40%;
 }
 
 .contact-image img {
 max-width: 100%;
+height: auto;
+display: block;
 }
 
 .fondo{
