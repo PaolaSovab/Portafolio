@@ -159,10 +159,10 @@ flex: 1;
 }
 
 .lado-derecho h2{
-font-size: 20px;
-text-align: center;
+font-size: 22px;
+text-align:left;
 margin-top: 20px;
-margin-bottom: 40px;
+margin-bottom: 20px;
 }
 
 .lado-derecho p{
@@ -252,7 +252,7 @@ width: 100px;
 height: 70px;
 background-color: #655D67;
 border-radius: 10px;
-margin: 0 0 15px 15px; 
+margin: 0px 0px 15px 15px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -270,6 +270,14 @@ transform: translateY(-5px);
 .sobremi .fila .contenedor-habilidades .habilidades i{
 font-size: 30px;
 margin-bottom: 10px;
+}
+
+.sobremi .fila .contenedor-habilidades .habilidades img {
+width: 40px;   
+height: 40px;
+object-fit: contain;
+margin-top: 5px;
+filter: invert(1);
 }
 
 .curriculum button{
@@ -456,27 +464,6 @@ left: -38px;
 
 .curriculum .fila .derecha h3{
 text-align: right;
-}
-
-.sobremi .fila .contenedor-habilidades .habilidades {
-width: 100px;
-height: 70px;
-background-color: #655D67;
-border-radius: 10px;
-margin: 0 15px 15px 0;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center; 
-transition: .3s;
-}
-
-.sobremi .fila .contenedor-habilidades .habilidades img {
-width: 40px;   
-height: 40px;
-object-fit: contain;
-margin-top: 5px;
-filter: invert(1);
 }
 
 /*Portafolio*/
