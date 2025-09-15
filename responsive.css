@@ -311,6 +311,7 @@ display: block;
 .sobremi .fila .contenedor-habilidades .habilidades{
 width: 20%;
 height: 40%;
+margin: 0 15px 15px 0;
 }
 
 .sobremi .fila .contenedor-habilidades .habilidades img{
