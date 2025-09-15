@@ -244,7 +244,7 @@ border-radius: 5px;
 .sobremi .fila .contenedor-habilidades{
 display: flex;
 flex-wrap: wrap;
-justify-content: end;
+justify-content: flex-end;
 }
 
 .sobremi .fila .contenedor-habilidades .habilidades{
@@ -252,7 +252,7 @@ width: 100px;
 height: 70px;
 background-color: #655D67;
 border-radius: 10px;
-margin: 0 15px 15px 0;
+margin: 0 0 15px 15px; 
 display: flex;
 flex-direction: column;
 align-items: center;
